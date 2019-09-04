@@ -30,38 +30,36 @@ html {
     padding-top: 30%;
     width: 33%;
 }
+/* -------------------------------------- */
 
 /* Audio Player */
-#audio-player {
+#audio-player { /* section */
     padding-top: 10%;
 }
-#selector {
+#selector { /*row */
     height: 35px;
     background-color: grey;
     border-radius: 10px;
 }
 #track-display {
     height: 100%;
-    width: 85%;
+    width: 80%;
 }
 #dropdown{
     height: 90%;
     width: 10%;
     background-color: white; 
+}  
+#play-pause-icon {
+    height: 90%;
+    width: 100%;
 }
-#controls {
-    margin:0 auto;
-    height: 50px;
-    width: 60px;
-    background-color: grey;
-    border-radius: 0px 0px 15px 15px;
-}   
-#controls-icon {
-    margin:0 auto;
-    padding: 5%;
-    height: 40px;
-    width: 40px;
+#play-pause {
+    height: 90%;
+    width: 10%;
 }
+/* -------------------------------------- */
+
 /* Footer */
 #footer {
     width: 100%;
@@ -75,3 +73,12 @@ html {
     width: 30px;
     text-decoration: none;
 }
+/* Desktop/Landscape View */
+@media only screen and (orientation: Landscape) {
+    .logo {
+        padding-top: 0%;
+    }
+    .nav-item {
+        padding-top: 10%;
+    }
+  }
