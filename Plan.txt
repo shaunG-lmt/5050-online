@@ -1,0 +1,12 @@
+==50/50==
+-- Music player
+    - Choose by genre
+        - dropdown
+        - JS 
+-- Opening animation 
+    - Logo moves upto default position 
+        after a second
+    - JS
+-- Misc
+    - White social media icons
+    - E-mail form
