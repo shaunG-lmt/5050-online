@@ -1,4 +1,5 @@
-html {
+body {
+    background-image: url(../images/background.jpg);
     background-color: #232323;
 }
 /* Parent Class */
@@ -75,6 +76,9 @@ html {
 }
 /* Desktop/Landscape View */
 @media only screen and (orientation: Landscape) {
+    body {
+        background-size: 100%;
+    }
     .logo {
         padding-top: 0%;
     }
