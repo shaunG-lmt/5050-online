@@ -1,6 +1,7 @@
 /* Basic Set up */
 body {
     background-image: url(../images/background.jpg);
+    background-size: 150%;
     background-color: #232323;
 }
 .section{
@@ -10,7 +11,7 @@ body {
 
 /* Logo/Title */
 #header {
-    position: fixed;
+    
 }
 #logo {
     /* Img (logo) */
@@ -21,6 +22,7 @@ body {
     font-size: 25px;
 
     /* Both */
+    margin: 0 auto;
     padding-top: 25%;
 }
 /* -------------------------------------- */
@@ -70,14 +72,16 @@ body {
 #email-form-background {
 }
 #email-form {
+    margin: 0 auto;
     position: fixed;
-    /* display: none; */
-    top: 0;
+    display: none;
+    top: 30%;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 50%;
-    height: 30%;
+    padding: 1%;
+    width: 55%;
+    height: 27.5%;
     background-color: #232323;    
     z-index: 2;
 }
@@ -91,23 +95,31 @@ body {
     text-align: center;
 }
 .social-item {
-    padding: 0.5rem 0.5rem 0rem;
+    padding: 1% 1% 1%;
     height: 30px;
     width: 30px;
     text-decoration: none;
 }
 /* -------------------------------------- */
 
-/* Desktop/Landscape View */
+/* Desktop/Landscape View Fixes for Display Issues */
 @media only screen and (orientation: Landscape) {
     body {
         background-size: 100%;
     }
-    .logo {
-        padding-top: 0%;
+    #logo {
+        height: 250px;
+        width: 250px;
+        padding-top: 5%;
     }
     .nav-item {
+        font-size: 34px;
         padding-top: 10%;
+    }
+    .social-item {
+        padding: 0 1%;
+        height: 60px;
+        width: 60px;
     }
   }
 /* -------------------------------------- */
