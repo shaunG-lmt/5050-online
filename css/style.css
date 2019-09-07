@@ -1,14 +1,18 @@
+/* Basic Set up */
 body {
     background-image: url(../images/background.jpg);
     background-color: #232323;
 }
-/* Parent Class */
 .section{
     text-align: center;
-}
+} 
+/* -------------------------------------- */
 
 /* Logo/Title */
-.logo {
+#header {
+    position: fixed;
+}
+#logo {
     /* Img (logo) */
     height: 150px;
     width: 150px;
@@ -19,9 +23,10 @@ body {
     /* Both */
     padding-top: 25%;
 }
+/* -------------------------------------- */
 
 /* Navigation */
-.nav {
+#nav {
     padding: 0px;
 }
 .nav-item {
@@ -61,6 +66,23 @@ body {
 }
 /* -------------------------------------- */
 
+/* E-mail form */
+#email-form-background {
+}
+#email-form {
+    position: fixed;
+    /* display: none; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 30%;
+    background-color: #232323;    
+    z-index: 2;
+}
+/* -------------------------------------- */
+
 /* Footer */
 #footer {
     width: 100%;
@@ -74,6 +96,8 @@ body {
     width: 30px;
     text-decoration: none;
 }
+/* -------------------------------------- */
+
 /* Desktop/Landscape View */
 @media only screen and (orientation: Landscape) {
     body {
@@ -86,3 +110,4 @@ body {
         padding-top: 10%;
     }
   }
+/* -------------------------------------- */
