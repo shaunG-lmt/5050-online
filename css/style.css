@@ -1,5 +1,7 @@
 body {
     background-image: url(../images/background.jpg);
+    background-size: 200%;
+    /* display: inline-block; */
     background-color: #232323;
 }
 /* Parent Class */
@@ -80,7 +82,7 @@ body {
         background-size: 100%;
     }
     .logo {
-        padding-top: 0%;
+        padding-top: 5%;
     }
     .nav-item {
         padding-top: 10%;
