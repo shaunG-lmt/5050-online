@@ -1,12 +1,16 @@
-==50/50==
--- Music player
-    - Choose by genre
-        - dropdown
-        - JS 
+                    ==50/50==
+
 -- Opening animation 
-    - Logo moves upto default position 
-        after a second
-    - JS
--- Misc
+    - Logo Appears First
+    - 1 Sec wait
+    - Load Other Items
+
+-- Events Display 
+    - List Events
+    - Bottom border for each row/event, small bottom spacing
+-- Music player
+    - One Track
+    - Controls
+    
+-- Footer 
     - White social media icons
-    - E-mail form

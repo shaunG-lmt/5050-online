@@ -1,112 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>50/50 Events</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>50/50 Events</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/style.css">
+    <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
-</head>
-<body>
-  <!--Title –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="section" id="header">
-    <img id="logo" src="images/favicon.png" alt="50/50 Events">
-  </div>
-  <!--Navigation –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="section">
-      <div class="container" id="nav">
-        <div class="row">
-          <a href="" class="one-third column nav-item">EVENTS</a>
-          <a href="" class="one-third column nav-item" onclick="show-e-mail-form">CONTACT</a>
-          <a href="" class="one-third column nav-item">LABEL</a>
-        </div>
-      </div>
-  </div>
-  <!--Audio Player –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <div id="audio-player" class="section">
-    <div id="selector" class="row u-fill-width">
-      <div id="track-display" class="ten columns">
-        Random/Select
-      </div>
-      <div id="dropdown" class="one columns">
+  </head>
+  <body>
+    <!--Title –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section" id="header">
+      <img id="logo" src="images/favicon.png" alt="50/50 Events">
+    </div>
+    <!--Navigation –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section">
+      <div class="row" id="nav"> 
+        <!-- Events -->
+        <a href="javascript:openEvents()" class="one-third column nav-item">EVENTS</a>
 
-      </div>
-      <div id="play-pause" class="one columns">
-        <img id="controls-icon" src="images/play-icon.png">
+        <!-- Contact -->
+        <a class="one-third column nav-item" href="https://www.facebook.com/5050EventsHull">CONTACT</a>
+
+        <!-- Label -->
+        <a href="https://soundcloud.com/5050events" class="one-third column nav-item">LABEL</a>
       </div>
     </div>
-  </div> -->
-  <div class="section" id="email-form-background">
-    <form  id="email-form">
+
+    <!-- Events Overlay -->
+    <div class="section" id="events-overlay">
+      <!-- Close Button -->
       <div class="row">
-        <!-- Contact us Heading (11 Columns), Close Button (1 Column) -->
-        <div class="six columns">
-          <label for="exampleEmailInput">Your email</label>
-          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+          <a href="javascript:closeEvents()" id="closeEvents-btn">&times;</a>
+      </div>
+      
+      <!-- Events Content -->
+      <div id="events-content">
+        <table>
+          <!-- Headers -->
+          <tr>
+            <th>Date</th>
+            <th>Artists</th>
+            <th>Venue</th>
+            <th>City</th>
+          </tr>
+          <!-- Contents -->
+          <tr>
+            <td>27/09/19</td>
+            <td>SAMPLETEXT</td>
+            <td>El Chupitos'</td>
+            <td>Hull</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!--Audio Player –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section" id="audio-player">
+      <audio controls>
+
+      </audio>
+    </div>
+    
+    <!-- <div id="audio-player" class="section">
+      <div id="selector" class="row u-fill-width">
+        <div id="track-display" class="ten columns">
+          Random/Select
         </div>
-        <div class="six columns">
-          <label for="exampleRecipientInput">Reason for contacting</label>
-          <select class="u-full-width" id="exampleRecipientInput">
-            <option value="Option 1">Questions</option>
-            <option value="Option 2">Admiration</option>
-            <option value="Option 3">Can I get your number?</option>
-          </select>
+        <div id="dropdown" class="one columns">
+
+        </div>
+        <div id="play-pause" class="one columns">
+          <img id="controls-icon" src="images/play-icon.png">
         </div>
       </div>
-      <label for="exampleMessage">Message</label>
-      <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
-      <label class="example-send-yourself-copy">
-        <input type="checkbox">
-        <span class="label-body">Send a copy to yourself</span>
-      </label>
-      <input class="button-primary" type="submit" value="Submit">
-    </form>
-  </div>
-  <!--Footer –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div id="footer" class="section">
-      <div class="container">
-        <div class="row">
-            <a href="" class="social-item">
-              <img class="social-item" src="images/fb-icon.png">
-            </a>
-            <a href="" class="social-item">
-                <img class="social-item" src="images/insta-icon.png">
-            </a>
-            <a href="" class="social-item">
-                <img class="social-item" src="images/favicon.png">
-            </a>
-            <a href="" class="social-item">
-                <img class="social-item" src="images/favicon.png">
-            </a>
-        </div>
+    </div> -->
+
+    
+
+    <!--Footer –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section">
+      <div class="row" id="footer">
+          <a href=""> <img class="social-item" src="images/fb-icon.png"> </a>
+          <a href=""> <img class="social-item" src="images/insta-icon.png"> </a>
+          <a href=""> <img class="social-item" src="images/favicon.png"> </a>
+          <a href=""> <img class="social-item" src="images/favicon.png"> </a>
       </div>
-  </div>
-</body>
+    </div>
+  </body>
 </html>
 <script>
-  function myFunction() {
-    var x = document.getElementById("email-form");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
+  function openEvents() {
+    // Hide Contrasting 
+    document.getElementById('audio-player').style.display = "none";
+    document.getElementById('nav').style.display = "none";
+    // Display Event Details
+    document.getElementById('events-overlay').style.display = "block";
+  }
+  function closeEvents() {
+    // Display Contrasting 
+    document.getElementById('audio-player').style.display = "block";
+    document.getElementById('nav').style.display = "block";
+    // Hide Event Details
+    document.getElementById('events-overlay').style.display = "none";
   }
 </script>
