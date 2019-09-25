@@ -8,9 +8,9 @@
 -- Events Display 
     - List Events
     - Bottom border for each row/event, small bottom spacing
+    - FIX FOR MEDIA UNDER 350PX
 -- Music player
     - One Track
     - Controls
-    
 -- Footer 
     - White social media icons
