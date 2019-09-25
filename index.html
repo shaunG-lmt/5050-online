@@ -32,11 +32,12 @@
     <!--Navigation –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="section">
       <div class="row" id="nav"> 
-        <!-- Events -->
-        <a href="javascript:openEvents()" class="one-third column nav-item">EVENTS</a>
-
+        
         <!-- Contact -->
         <a class="one-third column nav-item" href="https://www.facebook.com/5050EventsHull">CONTACT</a>
+
+        <!-- Events -->
+        <a href="javascript:openEvents()" class="one-third column nav-item">EVENTS</a>
 
         <!-- Label -->
         <a href="https://soundcloud.com/5050events" class="one-third column nav-item">LABEL</a>
@@ -51,29 +52,39 @@
       </div>
       
       <!-- Events Content -->
-      <div id="events-content">
-        <table>
-          <!-- Headers -->
+      <table class="u-fill-width" id="events-content">
+        <!-- Headers -->
+        <thead>
           <tr>
-            <th>Date</th>
-            <th>Artists</th>
-            <th>Venue</th>
-            <th>City</th>
-          </tr>
-          <!-- Contents -->
+              <th>Date</th>
+              <th>Artists</th>
+              <th>Venue</th>
+              <th>City</th>
+            </tr>
+        </thead>
+        
+        <!-- Contents -->
+        <tbody>
           <tr>
-            <td>27/09/19</td>
-            <td>SAMPLETEXT</td>
-            <td>El Chupitos'</td>
-            <td>Hull</td>
-          </tr>
-        </table>
-      </div>
+              <td>27/09/19</td>
+              <td>SAMPLETEXT</td>
+              <td>El Chupitos'</td>
+              <td>Hull</td>
+            </tr>
+
+            <tr>
+                <td>27/09/19</td>
+                <td>SAMPLETEXT</td>
+                <td>El Chupitos'</td>
+                <td>Hull</td>
+              </tr>
+        </tbody>
+      </table>
     </div>
 
     <!--Audio Player –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="section" id="audio-player">
-      <audio controls>
+      <audio class="u-full-width" controls>
 
       </audio>
     </div>
@@ -97,10 +108,10 @@
     <!--Footer –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="section">
       <div class="row" id="footer">
-          <a href=""> <img class="social-item" src="images/fb-icon.png"> </a>
-          <a href=""> <img class="social-item" src="images/insta-icon.png"> </a>
-          <a href=""> <img class="social-item" src="images/favicon.png"> </a>
-          <a href=""> <img class="social-item" src="images/favicon.png"> </a>
+          <a href=""> <img src="images/fb-icon.png"> </a>
+          <a href=""> <img src="images/insta-icon.png"> </a>
+          <a href=""> <img src="images/favicon.png"> </a>
+          <a href=""> <img src="images/favicon.png"> </a>
       </div>
     </div>
   </body>
@@ -110,6 +121,7 @@
     // Hide Contrasting 
     document.getElementById('audio-player').style.display = "none";
     document.getElementById('nav').style.display = "none";
+    document.getElementById('footer').style.display = "none";
     // Display Event Details
     document.getElementById('events-overlay').style.display = "block";
   }
@@ -117,6 +129,7 @@
     // Display Contrasting 
     document.getElementById('audio-player').style.display = "block";
     document.getElementById('nav').style.display = "block";
+    document.getElementById('footer').style.display = "block";
     // Hide Event Details
     document.getElementById('events-overlay').style.display = "none";
   }
