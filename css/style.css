@@ -135,11 +135,28 @@ body {
 	-moz-animation-duration:1s;
 	animation-duration:1s;
 }
-.fade {
+#header img.fade {
     -webkit-animation-delay: 0.7s;
     -moz-animation-delay: 0.7s;
     animation-delay: 0.7s;
-    }
+}
+#nav .nav-item.fade {
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+    animation-delay: 1.7s;
+}
+#audio-player .audio-background.fade {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+#footer a img.fade {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+
 /* Desktop/Landscape View Fixes for Display Issues */
 @media only screen and (orientation: Landscape) {
     body {
