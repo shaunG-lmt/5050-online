@@ -66,51 +66,21 @@
         <!-- Contents -->
         <tbody>
           <tr>
-              <td>27/09/19</td>
-              <td>SAMPLETEXT</td>
+              <td>2-3/11/19</td>
+              <td><a href="https://www.facebook.com/events/458274624820621/">50/50 Presents Haunted House</a></td>
               <td>El Chupitos'</td>
               <td>Hull</td>
             </tr>
-
-            <tr>
-                <td>27/09/19</td>
-                <td>SAMPLETEXT</td>
-                <td>El Chupitos'</td>
-                <td>Hull</td>
-              </tr>
         </tbody>
       </table>
     </div>
-
-    <!--Audio Player –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="section" id="audio-player">
-      <audio class="u-full-width audio-background fade" controls>
-
-      </audio>
-    </div>
-    
-    <!-- <div id="audio-player" class="section">
-      <div id="selector" class="row u-fill-width">
-        <div id="track-display" class="ten columns">
-          Random/Select
-        </div>
-        <div id="dropdown" class="one columns">
-
-        </div>
-        <div id="play-pause" class="one columns">
-          <img id="controls-icon" src="images/play-icon.png">
-        </div>
-      </div>
-    </div> -->
-
-    
-
     <!--Footer –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="section">
       <div class="row" id="footer">
-          <a href=""> <img class="fade" src="images/fb-icon.png"> </a>
-          <a href=""> <img class="fade" src="images/insta-icon.png"> </a>
-          <a href=""> <img class="fade" src="images/soundcloud-icon.png"> </a>
+          <a href="https://soundcloud.com/5050events"> <img class="fade" src="images/soundcloud-icon.png"> </a>
+          <a href="https://www.facebook.com/5050EventsHull"> <img class="fade" src="images/fb-icon.png"> </a>
+          <a href="https://www.instagram.com/5050uk/"> <img class="fade" src="images/insta-icon.png"> </a>
+          <a href="https://www.youtube.com/channel/UCnpf2Re0XtsUDJn1lVzuyWg"> <img class="fade" src="images/yt-icon.png"> </a>
       </div>
     </div>
   </body>
@@ -118,18 +88,16 @@
 <script>
   function openEvents() {
     // Hide Contrasting 
-    document.getElementById('audio-player').style.display = "none";
-    document.getElementById('nav').style.display = "none";
-    document.getElementById('footer').style.display = "none";
+    document.getElementById('nav').style.visibility = "hidden"; 
+    document.getElementById('footer').style.visibility = "hidden"; 
     // Display Event Details
-    document.getElementById('events-overlay').style.display = "block";
+    document.getElementById('events-overlay').style.visibility = "visible"; 
   }
   function closeEvents() {
     // Display Contrasting 
-    document.getElementById('audio-player').style.display = "block";
-    document.getElementById('nav').style.display = "block";
-    document.getElementById('footer').style.display = "block";
+    document.getElementById('nav').style.visibility = "visible"; 
+    document.getElementById('footer').style.visibility = "visible"; 
     // Hide Event Details
-    document.getElementById('events-overlay').style.display = "none";
+    document.getElementById('events-overlay').style.visibility = "hidden"; 
   }
 </script>
